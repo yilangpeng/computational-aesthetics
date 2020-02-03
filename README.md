@@ -57,7 +57,22 @@ This script caculates the following visual attributes:
 * hue_count: hue count, an indicatorof color variety [(Ke et al., 2006)](https://ieeexplore.ieee.org/abstract/document/1640788)
 
 ## colorname.py
-This script caculates the percentages of eleven basic colors: black, blue, brown, gray, green, orange, pink, purple, red, white, yellow [(Van De Weijer et al., 2009)](https://ieeexplore.ieee.org/abstract/document/4270243)
+This script caculates the percentages of eleven basic colors: black, blue, brown, gray, green, orange, pink, purple, red, white, yellow [(Van De Weijer et al., 2009)](https://ieeexplore.ieee.org/abstract/document/4270243). It also creates a PNG file that stores the convered colors.
+
+### examples
+<p float="left">
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Chefchaouen1.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Chefchaouen1.png" width="400" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Tallinn1.jpg" width="300" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Tallinn1.png" width="300" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Philadelphia7.jpg" width="300" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Philadelphia7.png" width="300" /> 
+</p>
+
 
 ## References
 Please cite the following articles:
