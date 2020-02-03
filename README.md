@@ -1,6 +1,6 @@
 # Computational aesthetics [under construction]
 
-Computationally caculated visual attributes have been demonstrated to predict a wide range of outcomes, such as images' aesthetic appeal and popularity on social media. In this repository you can find Python codes to caculate various visual attributes in Python, including:
+Computationally caculated visual attributes have been demonstrated to predict a wide range of outcomes, such as images' aesthetic appeal, popularity on social media, and interestingness. In this repository you can find Python codes to caculate various visual attributes, including:
 * Color-related attributes, such as brightness, contrast, colorfulness, color variety, and percentages of basic colors
 * Composition-related attributes, such as visual complexity, rule of thirds, symmetry
 
@@ -13,20 +13,18 @@ If you find this repository useful, please consider citing the following article
 * numpy
 * opencv
 * scikit-image
+* Pillow
 
-2. Create three folders
+2. Create folders
 * img all: place the images you want to process inside this folder. Please convert all your images to .JPG format first.
 * img transform: this folder saves the transformed versions (e.g., edge detection)
 * img result: this folder saves results in .txt files.
 
 3. Run each Python script
 
-## preprocess.py
-This script conducts some preprocessing of the data. It checks if an image is animated GIF, converts PNG and GIF files to JPG format, and resizes large images.
-
 ## basic.py
-This script caculates the following visual attributes:
-* filesize: the filesize of the image. Can be used as an indicator of visual complexity.
+This script caculates some basic visual attributes:
+* filesize: the file size of the image. Can be used as an indicator of visual complexity.
 * w, h: width and height of the image (in pixels).
 * ar, size: aspect ratio and image size.
 * rgbR, rgbG, rgbB, rgbR_sd, rgbG_sd, rgbB_sd: means and standard deviations of R, G, B values.
@@ -38,13 +36,9 @@ This script caculates the following visual attributes:
 * hue_count: hue count, an indicatorof color variety [(Ke et al., 2006)](https://ieeexplore.ieee.org/abstract/document/1640788)
 
 ## colorname.py
-This script assigns each RGB value into one of the eleven basic colors (black, blue, brown, gray, green, orange, pink, purple, red, white, yellow) based on a dataset in [(Van De Weijer et al., 2009)](https://ieeexplore.ieee.org/abstract/document/4270243). It caculates the percentages of eleven basic colors and creates a PNG file that stores the assigned colors.
+This script assigns each RGB value into one of the eleven basic colors (black, blue, brown, gray, green, orange, pink, purple, red, white, yellow) based on a dataset in [(Van De Weijer et al., 2009)](https://ieeexplore.ieee.org/abstract/document/4270243). It caculates the percentages of these basic colors and creates a PNG file that stores the assigned colors.
 
 ### example
-<p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Chefchaouen1.jpg" width="400" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Chefchaouen1.png" width="400" /> 
-</p>
 <p float="left">
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Philadelphia7.jpg" width="400" />
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Philadelphia7.png" width="400" /> 
@@ -52,9 +46,8 @@ This script assigns each RGB value into one of the eleven basic colors (black, b
 
 ## edge.py
 This script detects edges in images and caculates edge-related visual attributes.
-* edensity: edge density, calculated as the area occupied by edge points, an indicator of feature complexity.
-* edist: edge distribution, calculated as the average distance between edge points among all pairs of edge pointsm.
-* bounding box: the size of a box that contains at least 95% of all the edge points.
+* edensity: edge density, calculated as the area occupied by edge points. This attribute is an indicator of visual complexity.
+* edist: edge distribution, calculated as the average distance between edge points among all pairs of edge points. This attribute is an indicator of visual complexity.
 
 ### example
 <p float="left">
@@ -74,7 +67,13 @@ This script conducts image segmentation using two methods in scikit-image: quick
 </p>
 
 ## box.py
-This script finds a box that contains at least 95% of values in a grayscale.
+This script finds a box that contains at least 95% of values in a grayscale image. The grayscale image can be an edge map or a saliency map.
+
+## saliency.py
+This script creates a saliency map of the image and caculate saliency-related visual attributes.
+
+## preprocess.py
+This script conducts some preprocessing of the data. It converts still PNG and GIF files to JPG format and resizes large images.
 
 ## References
 * Peng, Y., & Jemmott III, J. B. (2018). Feast for the eyes: Effects of food Perceptions and computer vision features on food photo popularity. International Journal of Communication, 12: 313–336 [PDF](https://ijoc.org/index.php/ijoc/article/view/6678)
