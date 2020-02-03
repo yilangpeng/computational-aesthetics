@@ -5,13 +5,13 @@ In this repository you can find codes for caculating various visual attributes i
 Include:
 
 # Color-realted attributes
-Brightness
-Contrast
-Colorfulness
+Brightness&nbsp;
+Contrast&nbsp;
+Colorfulness&nbsp;
 Saturation
-Hue
-Percentages of eleven basic colors: red, orange, yellow, green, blue, pink, purple, brown, gray, black, white 
-Color variety
+Hue<br/>
+Percentages of eleven basic colors: red, orange, yellow, green, blue, pink, purple, brown, gray, black, white <br/>
+Color variety<br/>
 
 (will be updated later)
 # Composition-related attributes
