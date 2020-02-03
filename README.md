@@ -11,14 +11,11 @@ Include:
 * Brightness
 * Contrast
 * Colorfulness
-* Percentages of eleven basic colors: red, orange, yellow, green, blue, pink, purple, brown, gray, black, white
 * Color variety
+* Percentages of eleven basic colors: red, orange, yellow, green, blue, pink, purple, brown, gray, black, white
 
 ## Composition-related attributes
-* Height
-* Width
-* Size
-* Aspect ratio
+* Height, width, size, aspect ratio
 * Visual complexity
   * JPEG filesize
   * Edge density
@@ -47,17 +44,17 @@ Include:
 3. Run each Python script
 
 ## basic.py
-This file caculates the following visual attributes:
+This script caculates the following visual attributes:
 * filesize: the filesize of the image. Can be used as an indicator of visual complexity.
 * w, h: width and height of the image (in pixels).
-* ar, size: aspect ratio & image size
-* rgbR, rgbG, rgbB, rgbR_sd, rgbG_sd, rgbB_sd: means and standard deviations of R, G, B values
-* hue, saturation, value, hue_sd, saturation_sd, value_sd: means and standard deviations of H, S, V values
-* xyzX, xyzY, xyzZ, xyzX_sd, xyzY_sd, xyzZ_sd: : means and standard deviations of X, Y, Z values. Y can be an indicator of percevied luminance
+* ar, size: aspect ratio and image size.
+* rgbR, rgbG, rgbB, rgbR_sd, rgbG_sd, rgbB_sd: means and standard deviations of R, G, B values.
+* hue, saturation, value, hue_sd, saturation_sd, value_sd: means and standard deviations of H, S, V values.
+* xyzX, xyzY, xyzZ, xyzX_sd, xyzY_sd, xyzZ_sd: : means and standard deviations of X, Y, Z values. Y is an indicator of luminance.
 * bright, bright_sd: mean and standard deviation of brightness
-* contrast: finds a range that covers 95% of the mass of the brightess histogram
-* colorful: colorfulness
-* hue_count: color variety
+* contrast: contrast. The script finds a range in the brightess histogram that covers 95% of the mass of the histogram.
+* colorful: colorfulness [(Hasler & Suesstrunk, 2003)](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/5007/0000/Measuring-colorfulness-in-natural-images/10.1117/12.477378.short?SSO=1)
+* hue_count: hue count, an indicatorof color variety [(Ke et al., 2006)](https://ieeexplore.ieee.org/abstract/document/1640788)
 
 ## References
 Please cite the following articles:
