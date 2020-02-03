@@ -1,30 +1,12 @@
 # Computational aesthetics [under construction]
 
-In this repository you can find codes for caculating various visual attributes in Python.
+Computationally caculated visual attributes have been demonstrated to predict a wide range of outcomes, such as images' aesthetic appeal and popularity on social media. In this repository you can find Python codes to caculate various visual attributes in Python, including:
+* Color-related attributes, such as brightness, contrast, colorfulness, color variety, and percentages of basic colors
+* Composition-related attributes, such as visual complexity, rule of thirds, symmetry
 
-Include:
-
-## Color-related attributes
-* RGB
-* HSV
-* XYZ
-* Brightness
-* Contrast
-* Colorfulness
-* Color variety
-* Percentages of eleven basic colors: red, orange, yellow, green, blue, pink, purple, brown, gray, black, white
-
-## Composition-related attributes
-* Height, width, size, aspect ratio
-* Visual complexity
-  * JPEG filesize
-  * Edge density
-  * Edge distribution
-  * Bounding box
-  * Segmentation
-* Rule of thirds
-* Symmetry
-(will be updated later)
+If you find this repository useful, please consider citing the following articles:
+* Peng, Y., & Jemmott III, J. B. (2018). Feast for the eyes: Effects of food Perceptions and computer vision features on food photo popularity. [PDF](https://ijoc.org/index.php/ijoc/article/view/6678)
+* Peng, Y. (2018). Same candidates, different faces: Uncovering media bias in visual portrayals of presidential candidates with computer vision. [PDF](https://www.researchgate.net/profile/Yilang_Peng2/publication/328005872_Same_Candidates_Different_Faces_Uncovering_Media_Bias_in_Visual_Portrayals_of_Presidential_Candidates_with_Computer_Vision/links/5bb9a125a6fdcc9552d50673/Same-Candidates-Different-Faces-Uncovering-Media-Bias-in-Visual-Portrayals-of-Presidential-Candidates-with-Computer-Vision.pdf)
 
 ## How to use
 1. Install the following packages
@@ -91,8 +73,9 @@ This script conducts image segmentation using two methods in scikit-image: quick
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/segment%20normalized_cut/Texas1 ava.png" width="400" /> 
 </p>
 
+## box.py
+This script finds a box that contains at least 95% of values in a grayscale.
 
 ## References
-Please cite the following articles:
 * Peng, Y., & Jemmott III, J. B. (2018). Feast for the eyes: Effects of food Perceptions and computer vision features on food photo popularity. International Journal of Communication, 12: 313–336 [PDF](https://ijoc.org/index.php/ijoc/article/view/6678)
 * Peng, Y. (2018). Same candidates, different faces: Uncovering media bias in visual portrayals of presidential candidates with computer vision. Journal of Communication, 68(5): 920-941. [PDF](https://www.researchgate.net/profile/Yilang_Peng2/publication/328005872_Same_Candidates_Different_Faces_Uncovering_Media_Bias_in_Visual_Portrayals_of_Presidential_Candidates_with_Computer_Vision/links/5bb9a125a6fdcc9552d50673/Same-Candidates-Different-Faces-Uncovering-Media-Bias-in-Visual-Portrayals-of-Presidential-Candidates-with-Computer-Vision.pdf)
