@@ -46,6 +46,19 @@ Include:
 
 3. Run each Python script
 
+## basic.py
+This file caculates the following visual attributes:
+* filesize: the filesize of the image. Can be used as an indicator of visual complexity.
+* w, h: width and height of the image (in pixels).
+* ar, size: aspect ratio & image size
+* rgbR, rgbG, rgbB, rgbR_sd, rgbG_sd, rgbB_sd: means and standard deviations of R, G, B values
+* hue, saturation, value, hue_sd, saturation_sd, value_sd: means and standard deviations of H, S, V values
+* xyzX, xyzY, xyzZ, xyzX_sd, xyzY_sd, xyzZ_sd: : means and standard deviations of X, Y, Z values. Y can be an indicator of percevied luminance
+* bright, bright_sd: mean and standard deviation of brightness
+* contrast: finds a range that covers 95% of the mass of the brightess histogram
+* colorful: colorfulness
+* hue_count: color variety
+
 ## References
 Please cite the following articles:
 * Peng, Y., & Jemmott III, J. B. (2018). Feast for the eyes: Effects of food Perceptions and computer vision features on food photo popularity. International Journal of Communication, 12: 313–336 [PDF](https://ijoc.org/index.php/ijoc/article/view/6678)
