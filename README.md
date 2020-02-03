@@ -1,4 +1,4 @@
-# Computational aesthetics
+# Computational aesthetics [under construction]
 
 In this repository you can find codes for caculating various visual attributes in Python.
 
@@ -65,8 +65,8 @@ This script assigns each RGB value into one of the eleven basic colors (black, b
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Chefchaouen1.png" width="400" /> 
 </p>
 <p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Philadelphia7.jpg" width="300" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Philadelphia7.png" width="300" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Philadelphia7.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Philadelphia7.png" width="400" /> 
 </p>
 
 ## edge.py
@@ -74,6 +74,12 @@ This script detects edges in images and caculates edge-related visual attributes
 * edge density: the area occupied by edge points, an indicator of feature complexity.
 * edge distribution: the average distance between edge points among all pairs of edge pointsm.
 * bounding box: the size of a box that contains at least 95% of all the edge points.
+
+<p float="left">
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Chefchaouen2.jpg" width="300" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Chefchaouen2.png" width="300" /> 
+</p>
+
 
 ## References
 Please cite the following articles:
