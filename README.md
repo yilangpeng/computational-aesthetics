@@ -56,6 +56,9 @@ This script caculates the following visual attributes:
 * colorful: colorfulness [(Hasler & Suesstrunk, 2003)](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/5007/0000/Measuring-colorfulness-in-natural-images/10.1117/12.477378.short?SSO=1)
 * hue_count: hue count, an indicatorof color variety [(Ke et al., 2006)](https://ieeexplore.ieee.org/abstract/document/1640788)
 
+## colorname.py
+This script caculates the percentages of eleven basic colors: black, blue, brown, gray, green, orange, pink, purple, red, white, yellow [(Van De Weijer et al., 2009)](https://ieeexplore.ieee.org/abstract/document/4270243)
+
 ## References
 Please cite the following articles:
 * Peng, Y., & Jemmott III, J. B. (2018). Feast for the eyes: Effects of food Perceptions and computer vision features on food photo popularity. International Journal of Communication, 12: 313–336 [PDF](https://ijoc.org/index.php/ijoc/article/view/6678)
