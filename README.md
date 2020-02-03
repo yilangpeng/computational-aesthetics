@@ -21,13 +21,9 @@ Include:
   * Edge density
   * Edge distribution
   * Bounding box
+  * Segmentation
 * Rule of thirds
 * Symmetry
-(will be updated later)
-
-## Content-related atttributes
-* Number of faces
-* Face size
 (will be updated later)
 
 ## How to use
@@ -37,11 +33,14 @@ Include:
 * scikit-image
 
 2. Create three folders
-* img original: place the images you want to process inside this folder. Please convert all your images to .JPG format first.
+* img all: place the images you want to process inside this folder. Please convert all your images to .JPG format first.
 * img transform: this folder saves the transformed versions (e.g., edge detection)
 * img result: this folder saves results in .txt files.
 
 3. Run each Python script
+
+## preprocess.py
+This script conducts some preprocessing of the data. It checks if an image is animated GIF, converts PNG and GIF files to JPG format, and resizes large images.
 
 ## basic.py
 This script caculates the following visual attributes:
@@ -59,7 +58,7 @@ This script caculates the following visual attributes:
 ## colorname.py
 This script assigns each RGB value into one of the eleven basic colors (black, blue, brown, gray, green, orange, pink, purple, red, white, yellow) based on a dataset in [(Van De Weijer et al., 2009)](https://ieeexplore.ieee.org/abstract/document/4270243). It caculates the percentages of eleven basic colors and creates a PNG file that stores the assigned colors.
 
-### examples
+### example
 <p float="left">
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Chefchaouen1.jpg" width="400" />
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Chefchaouen1.png" width="400" /> 
@@ -71,13 +70,25 @@ This script assigns each RGB value into one of the eleven basic colors (black, b
 
 ## edge.py
 This script detects edges in images and caculates edge-related visual attributes.
-* edge density: the area occupied by edge points, an indicator of feature complexity.
-* edge distribution: the average distance between edge points among all pairs of edge pointsm.
+* edensity: edge density, calculated as the area occupied by edge points, an indicator of feature complexity.
+* edist: edge distribution, calculated as the average distance between edge points among all pairs of edge pointsm.
 * bounding box: the size of a box that contains at least 95% of all the edge points.
 
+### example
 <p float="left">
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Chefchaouen2.jpg" width="300" />
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Chefchaouen2.png" width="300" /> 
+</p>
+
+## segment.py
+This script conducts image segmentation using two methods in scikit-image: quickshit and normalized cut. It then caculates the number of segments and the size of the largest, second largest, and third largest segment. 
+* nseg: number of segments, which can be an indicator of visual complexity.
+* nseg_l: number of segments that are larger than a threshold (5% of the image area)
+* size0, size1, size2: the size of the largest, second largest, and third largest segment.
+
+<p float="left">
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Texas1.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/segment%20normalized_cut/Texas1 ava.png" width="400" /> 
 </p>
 
 
