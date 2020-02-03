@@ -6,17 +6,11 @@ Include:
 
 ## Color-related attributes
 * Brightness
-
 * Contrast
-
 * Colorfulness
-
 * Saturation
-
 * Hue
-
 * Percentages of eleven basic colors: red, orange, yellow, green, blue, pink, purple, brown, gray, black, white
-
 * Color variety
 
 ## Composition-related attributes
@@ -31,10 +25,12 @@ Include:
   * Bounding box
 * Rule of thirds
 * Symmetry
+(will be updated later)
 
 ## Content-related atttributes
 * Number of faces
 * Face size
+(will be updated later)
 
 ## You will need to install the following packages
 * numpy
