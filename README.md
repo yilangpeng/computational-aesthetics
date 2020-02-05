@@ -45,8 +45,8 @@ This script assigns each RGB value into one of the eleven basic colors (black, b
 </p>
 
 <p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Cordoba1.jpg" width="400" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Cordoba1.png" width="400" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Chefchaouen1.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/colorname/Chefchaouen1.png" width="400" /> 
 </p>
 
 ## edge.py
@@ -56,12 +56,12 @@ This script detects edges in images and caculates edge-related visual attributes
 
 ### example
 <p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Barcelona1.jpg" width="300" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Barcelona1.jpg" width="400" />
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Barcelona1.png" width="300" /> 
 </p>
 
 <p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Bagan1.jpg" width="300" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Bagan1.jpg" width="400" />
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Bagan1.png" width="300" /> 
 </p>
 
@@ -69,13 +69,13 @@ This script detects edges in images and caculates edge-related visual attributes
 This script finds a box that contains at least 95% of values in a grayscale image and creates a PNG file that shows the box. The grayscale image can be an edge map or a saliency map. 
 * minsize_percent: the size of the bounding box, divided by the image size. It can be an indicator of visual complexity.
 <p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Essaouira1.jpg" width="300" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Essaouira1.png" width="300" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Essaouira1.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Essaouira1.png" width="400" /> 
 </p>
 
 <p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Suzhou2.jpg" width="300" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Suzhou2.png" width="300" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Suzhou2.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Suzhou2.png" width="400" /> 
 </p>
 
 ## segment.py
@@ -88,9 +88,6 @@ This script conducts image segmentation using two methods in scikit-image: quick
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Texas1.jpg" width="400" />
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/segment%20normalized_cut/Texas1 ava.png" width="400" /> 
 </p>
-
-## saliency.py
-This script creates a saliency map of the image and caculate saliency-related visual attributes.
 
 ## preprocess.py
 This script conducts some preprocessing of the data. It converts still PNG and GIF files to JPG format and resizes large images.
