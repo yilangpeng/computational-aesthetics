@@ -57,12 +57,12 @@ This script detects edges in images and caculates edge-related visual attributes
 ### example
 <p float="left">
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Barcelona1.jpg" width="400" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Barcelona1.png" width="300" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Barcelona1.png" width="400" /> 
 </p>
 
 <p float="left">
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Bagan1.jpg" width="400" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Bagan1.png" width="300" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Bagan1.png" width="400" /> 
 </p>
 
 ## box.py
@@ -70,12 +70,12 @@ This script finds a box that contains at least 95% of values in a grayscale imag
 * minsize_percent: the size of the bounding box, divided by the image size. It can be an indicator of visual complexity.
 <p float="left">
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Essaouira1.jpg" width="400" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Essaouira1.png" width="400" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/box%20edge%20canny/Essaouira1.png" width="400" /> 
 </p>
 
 <p float="left">
   <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Suzhou2.jpg" width="400" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/edge%20canny/Suzhou2.png" width="400" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/box%20edge%20canny/Suzhou2.png" width="400" /> 
 </p>
 
 ## segment.py
@@ -85,8 +85,13 @@ This script conducts image segmentation using two methods in scikit-image: quick
 * size0, size1, size2: the size of the largest, second largest, and third largest segment.
 
 <p float="left">
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Texas1.jpg" width="400" />
-  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/segment%20normalized_cut/Texas1 ava.png" width="400" /> 
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Yellowknife1.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/segment%20normalized_cut/Yellowknife1 ava.png" width="400" /> 
+</p>
+
+<p float="left">
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20all/Cordoba1.jpg" width="400" />
+  <img src="https://github.com/lithiumfortytwo/computational-aesthetics/blob/master/img%20transform/segment%20normalized_cut/Cordoba1 ava.png" width="400" /> 
 </p>
 
 ## preprocess.py
