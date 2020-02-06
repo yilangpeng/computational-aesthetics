@@ -1,10 +1,8 @@
-# Computational aesthetics [under construction]
+# Computational aesthetics
 
-Computationally caculated visual attributes have been demonstrated to predict a wide range of outcomes, such as images' aesthetic appeal, popularity on social media, and interestingness. In this repository you can find Python codes to caculate various visual attributes, including:
-* Color-related attributes, such as brightness, contrast, colorfulness, color variety, and percentages of different colors
-* Composition-related attributes, such as visual complexity, rule of thirds, symmetry
+Computationally caculated visual attributes have been demonstrated to predict a wide range of outcomes, such as images' aesthetic appeal, popularity on social media, and interestingness. In this repository you can find Python codes to caculate a variety of visual attributes, such as brightness, contrast, colorfulness, color variety, percentages of different colors, and visual complexity.
 
-If you find this repository useful and use the codes in your work, please cite the following articles.
+If you find this repository useful and use some codes in your work, please cite the following articles.
 * Peng, Y., & Jemmott III, J. B. (2018). Feast for the eyes: Effects of food Perceptions and computer vision features on food photo popularity. [PDF](https://ijoc.org/index.php/ijoc/article/view/6678)
 * Peng, Y. (2018). Same candidates, different faces: Uncovering media bias in visual portrayals of presidential candidates with computer vision. [PDF](https://www.researchgate.net/profile/Yilang_Peng2/publication/328005872_Same_Candidates_Different_Faces_Uncovering_Media_Bias_in_Visual_Portrayals_of_Presidential_Candidates_with_Computer_Vision/links/5bb9a125a6fdcc9552d50673/Same-Candidates-Different-Faces-Uncovering-Media-Bias-in-Visual-Portrayals-of-Presidential-Candidates-with-Computer-Vision.pdf)
 
@@ -16,7 +14,7 @@ If you find this repository useful and use the codes in your work, please cite t
 * scikit-image (for segment.py)
 
 2. Create folders
-* img all: place the images you want to process inside this folder. Please convert all your images to .JPG format first. You can also use the preprocess.py to rezie large pictures.
+* img all: place the images you want to process inside this folder. Please convert all your images to .JPG format first. You can also use preprocess.py to rezie large pictures.
 * img transform: this folder saves the transformed versions (e.g., edge detection)
 * img result: this folder saves results in .txt files.
 
@@ -26,7 +24,7 @@ If you find this repository useful and use the codes in your work, please cite t
 This script caculates basic visual attributes, including:
 * filesize: the file size of the image. Can be used as an indicator of visual complexity.
 * w, h: width and height of the image (in pixels).
-* ar, size: aspect ratio (w/h) and image size (w * h).
+* ar, size: aspect ratio (w/h) and image size (w*h).
 * rgbR, rgbG, rgbB, rgbR_sd, rgbG_sd, rgbB_sd: means and standard deviations of R, G, B values.
 * hue, saturation, value, hue_sd, saturation_sd, value_sd: means and standard deviations of H, S, V values.
 * xyzX, xyzY, xyzZ, xyzX_sd, xyzY_sd, xyzZ_sd: : means and standard deviations of X, Y, Z values. Y is an indicator of luminance.
@@ -97,4 +95,4 @@ This script conducts image segmentation using two methods in scikit-image: quick
 ## preprocess.py
 This script conducts some preprocessing of the data. It converts still PNG and GIF files to JPG format and resizes large images.
 
-Images used in this repository are copyrighted. Please contact me if you need to use them for other purposes.
+Note: Images in this repository are copyrighted. Please contact me if you need to use them for other purposes.
