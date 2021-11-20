@@ -95,4 +95,4 @@ This script conducts image segmentation using two methods in scikit-image: quick
 ## preprocess.py
 This script conducts some preprocessing of the data. It converts still PNG and GIF files to JPG format and resizes large images.
 
-Note: Images in this repository are copyrighted. Please contact me if you need to use them for other purposes.
+Note: Images in this repository are copyrighted (I take many photos when I am not doing research). Please contact me if you need to use them for other purposes.
